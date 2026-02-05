@@ -33,7 +33,7 @@ scopeExample();
 // this won't work because this variable does not exist outside of the scopeExample function
 // try to access that local variable from the previous function
 // TO DO
-//addToPage(localVariable);
+addToPage(localVariable);
 
 // let's create a global score variable
 // TO DO
