@@ -77,8 +77,10 @@ function addToPage(string){
 // XXXXXX
 // XXXXXX
 // Convert into a drawBox function
-funtion drawBox(numRows, numCols, boxChar){
-if(boxChar === undefined){
+function drawBox(numRows, numCols, boxChar){
+    let output = "";
+
+    if(boxChar === undefined){
     boxChar = "X";
 }
 // you could also write the code below to assign the value to the boxChar variable 
@@ -90,7 +92,10 @@ for (let r = 0; r < numRows; r++) {
         line += boxChar;
     }
     console.log(line);
+    output += line + "<br>";
 }
+// add the output to the page
+addToPage(output);
 }
 // call our new function with different arguments
 // TO DO
