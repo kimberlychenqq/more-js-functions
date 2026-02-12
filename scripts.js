@@ -6,7 +6,7 @@ function addToPage(string){
 // let's write a function that accepts two arguments then adds them together. If the arguments aren't both numbers, concatenate that with the other argument and a space between the args, otherwise perform addition
 // TO DO
 function addTheValue(param1, param2){
-    if(isNaN(param1 || isNaN(param2))){
+    if(isNaN(param1) || isNaN(param2)){
         addToPage("At least one parameter is not a number: " + param1 + " " + param2);
     }
     else{
@@ -33,7 +33,7 @@ scopeExample();
 // this won't work because this variable does not exist outside of the scopeExample function
 // try to access that local variable from the previous function
 // TO DO
-addToPage(localVariable);
+//ddToPage(localVariable);
 
 // let's create a global score variable
 // TO DO
